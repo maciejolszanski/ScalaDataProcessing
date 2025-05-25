@@ -1,4 +1,5 @@
 import org.scalatest.funsuite.AnyFunSuite
+import java.io.FileNotFoundException
 
 class CSVReaderSpec extends AnyFunSuite {
   test("test should read a CSV file") {
@@ -12,5 +13,13 @@ class CSVReaderSpec extends AnyFunSuite {
     )
 
     assert(file_content == expected_content)
+  }
+
+  test("test incorrect path") {
+    val reader = CSVReader("src/test/resources/non_existing_test_file.csv", ',')
+
+    intercept[FileNotFoundException] {
+      reader.readRaw()
+    }
   }
 }
