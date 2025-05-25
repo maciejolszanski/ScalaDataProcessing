@@ -24,8 +24,5 @@ jobs:
         with:
           apps: sbt scala scalafmt
 
-      - name: Check sbt version (debug)
-        run: sbt sbtVersion
-
       - name: Run tests
         run: sbt test
