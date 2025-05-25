@@ -4,5 +4,7 @@ ThisBuild / scalaVersion := "3.3.6"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "ScalaDataProcessing"
+    name := "ScalaDataProcessing",
+    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.19" % "test",
+    testOptions += Tests.Argument(TestFrameworks.ScalaTest, "-oD")
   )
