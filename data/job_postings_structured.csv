@@ -1,0 +1,5 @@
+sourceURL,title,company,description,salaryRange,skills,location,isRemote,datePublished
+https://jobs.example.com/job/1,Data Engineer,DataCorp,Responsible for building data pipelines.,15000-20000,"Python,SQL,Scala","Warszawa, Polska",false,2025-05-10T09:00:00
+https://jobs.example.com/job/2,Backend Developer,TechSolutions,Develop backend services.,14000-18000,"Java,Kotlin,Spring","Kraków, Polska",true,2025-05-14T10:30:00
+https://jobs.example.com/job/3,Machine Learning Engineer,MLPower,Build and deploy ML models.,20000-25000,"Python,TensorFlow,Pandas","Gdańsk, Polska",true,2025-05-18T11:45:00
+https://jobs.example.com/job/4,Cloud Engineer,CloudBase,Maintain cloud infrastructure.,18000-22000,"AWS,Docker,Kubernetes","Poznań, Polska",false,2025-05-11T08:15:00
