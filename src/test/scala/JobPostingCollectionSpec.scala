@@ -5,7 +5,7 @@ import java.time.LocalDateTime
 
 class JobPostingCollectionSpec extends AnyFunSuite {
 
-  test("getting distinct locations - no duplicates"){
+  test("getting distinct locations - no duplicates") {
     val input = JobPostingCollection(
       List(
         JobPosting(
@@ -44,7 +44,7 @@ class JobPostingCollectionSpec extends AnyFunSuite {
       )
     )
     val expectedOutput = Set("Warsaw, Poland", "Kraków, Poland")
-    val actualOutput = input.getDistinctLocations
+    val actualOutput   = input.getDistinctLocations
 
     assert(expectedOutput == actualOutput)
   }

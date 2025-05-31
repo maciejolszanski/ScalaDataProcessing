@@ -10,7 +10,7 @@ object Utils {
 
     try {
       val allLines = file.getLines().toList
-      val lines = if header then allLines.tail else allLines
+      val lines    = if header then allLines.tail else allLines
       lines
     } finally {
       file.close()
