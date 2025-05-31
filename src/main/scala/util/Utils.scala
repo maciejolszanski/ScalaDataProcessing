@@ -1,8 +1,9 @@
 package util
 
 import model.{JobPosting, JobPostingCollection}
-import scala.io.Source
+
 import java.time.LocalDateTime
+import scala.io.Source
 
 object Utils {
   def readCSV(path: String, header: Boolean): List[String] = {
@@ -23,6 +24,30 @@ object Utils {
   ): JobPostingCollection = {
     val postings = postingsText.map(_.split(separator).createJobPosting)
     JobPostingCollection(postings)
+  }
+
+  def displayMapPretty[K, V](
+      mapToDisplay: Map[K, V],
+      indentation: Int
+  ): Unit = {
+    mapToDisplay.foreach { case (key, value) =>
+      println(s"${generateNChars(indentation, ' ', "")}$key:")
+      value match
+        case l: List[_] =>
+          println(s"${generateNChars(indentation + 1, ' ', "")}${l.mkString(", ")}")
+        case s: Set[_] =>
+          println(s"${generateNChars(indentation + 1, ' ', "")}${s.mkString(", ")}")
+        case (tupleVal1, tupleVal2) =>
+          println(s"${generateNChars(indentation + 1, ' ', "")}$tupleVal1 - $tupleVal2")
+        case m: Map[_, _] => displayMapPretty(m, indentation + 1)
+        case other => println(s"${generateNChars(indentation + 1, ' ', "")}$other")
+    }
+  }
+
+  @annotation.tailrec
+  def generateNChars(n: Int, character: Char, acc: String): String = {
+    if n <= 0 then acc
+    else generateNChars(n - 1, character, acc :+ character)
   }
 
   extension (postingElems: Array[String]) {
