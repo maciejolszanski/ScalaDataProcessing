@@ -22,4 +22,16 @@ case class JobPostingCollection(jobPostings: List[JobPosting]) {
         title -> (sumMin / count, sumMax / count)
       }
   }
+
+  def getSkillsPerTitle: Map[String, Set[String]] = {
+    jobPostings
+      .groupBy(_.title)
+      .view
+      .mapValues { postings =>
+        postings.foldLeft(Set.empty[String]) { case (acc, posting) =>
+          acc ++ posting.skills.toSet
+        }
+      }
+      .to(Map)
+  }
 }

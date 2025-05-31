@@ -95,4 +95,51 @@ class JobPostingCollectionSpec extends AnyFunSuite {
 
     assert(expectedOutput == actualOutput)
   }
+
+  test("getting skills per title") {
+    val input = JobPostingCollection(
+      List(
+        JobPosting(
+          sourceURL = "",
+          title = "jobTitle1",
+          company = "",
+          description = "",
+          salaryRange = "100-200",
+          skills = List("Python", "SQL"),
+          location = "",
+          isRemote = true,
+          datePublished = LocalDateTime.of(2025, 1, 1, 1, 1, 1, 1)
+        ),
+        JobPosting(
+          sourceURL = "",
+          title = "jobTitle1",
+          company = "",
+          description = "",
+          salaryRange = "200-400",
+          skills = List("Python", "AWS"),
+          location = "",
+          isRemote = true,
+          datePublished = LocalDateTime.of(2025, 1, 1, 1, 1, 1, 1)
+        ),
+        JobPosting(
+          sourceURL = "",
+          title = "jobTitle2",
+          company = "",
+          description = "",
+          salaryRange = "400 - 1200",
+          skills = List("Scala", "Rust"),
+          location = "",
+          isRemote = true,
+          datePublished = LocalDateTime.of(2025, 1, 1, 1, 1, 1)
+        )
+      )
+    )
+    val expectedOutput = Map(
+      "jobTitle1" -> Set("Python", "SQL", "AWS"),
+      "jobTitle2" -> Set("Scala", "Rust")
+    )
+    val actualOutput = input.getSkillsPerTitle
+
+    assert(expectedOutput == actualOutput)
+  }
 }
