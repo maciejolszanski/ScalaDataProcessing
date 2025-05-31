@@ -1,6 +1,6 @@
 package util
 
-import model.JobPosting
+import model.{JobPosting, JobPostingCollection}
 import scala.io.Source
 import java.time.LocalDateTime
 
@@ -20,8 +20,9 @@ object Utils {
   def parseJobPostings(
       postingsText: List[String],
       separator: Char
-  ): List[JobPosting] = {
-    postingsText.map(_.split(separator).createJobPosting)
+  ): JobPostingCollection = {
+    val postings = postingsText.map(_.split(separator).createJobPosting)
+    JobPostingCollection(postings)
   }
 
   extension (postingElems: Array[String]) {

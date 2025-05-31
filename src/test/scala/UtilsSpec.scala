@@ -1,4 +1,4 @@
-import model.JobPosting
+import model.{JobPosting, JobPostingCollection}
 import org.scalatest.funsuite.AnyFunSuite
 
 import java.time.LocalDateTime
@@ -39,10 +39,10 @@ class UtilsSpec extends AnyFunSuite {
       "https://jobs.example.com/job/1;Data Engineer;DataCorp;Responsible for building data pipelines.;15000-20000;Python,SQL,Scala;Warszawa, Polska;false;2025-05-10T09:00:00",
       "https://jobs.example.com/job/2;Backend Developer;TechSolutions;Develop backend services.;14000-18000;Java,Kotlin,Spring;Kraków, Polska;true;2025-05-14T10:30:00"
     )
-    val expectedOutput = List(
+    val expectedOutput = JobPostingCollection(List(
       JobPosting("https://jobs.example.com/job/1", "Data Engineer", "DataCorp", "Responsible for building data pipelines.", "15000-20000", List("Python", "SQL", "Scala"), "Warszawa, Polska", false, LocalDateTime.of(2025, 5, 10, 9, 0, 0)),
       JobPosting("https://jobs.example.com/job/2", "Backend Developer", "TechSolutions", "Develop backend services.", "14000-18000", List("Java", "Kotlin", "Spring"), "Kraków, Polska", true, LocalDateTime.of(2025, 5, 14, 10, 30, 0))
-    )
+    ))
 
     val actualOutput = Utils.parseJobPostings(input, ';')
   }
