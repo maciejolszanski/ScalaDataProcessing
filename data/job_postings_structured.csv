@@ -1,5 +1,25 @@
 sourceURL;title;company;description;salaryRange;skills;location;isRemote;datePublished
-https://jobs.example.com/job/1;Data Engineer;DataCorp;Responsible for building data pipelines.;15000-20000;Python,SQL,Scala;Warszawa, Polska;false;2025-05-10T09:00:00
-https://jobs.example.com/job/2;Backend Developer;TechSolutions;Develop backend services.;14000-18000;Java,Kotlin,Spring;Kraków, Polska;true;2025-05-14T10:30:00
-https://jobs.example.com/job/3;Machine Learning Engineer;MLPower;Build and deploy ML models.;20000-25000;Python,TensorFlow,Pandas;Gdańsk, Polska;true;2025-05-18T11:45:00
-https://jobs.example.com/job/4;Cloud Engineer;CloudBase;Maintain cloud infrastructure.;18000-22000;AWS,Docker,Kubernetes;Poznań, Polska;false;2025-05-11T08:15:00
+https://jobs.example.com/job/1;Data Engineer;DataCorp;Responsible for building data pipelines.;15000-20000;Python,SQL,Scala;Warszawa;false;2025-05-10T09:00:00
+https://jobs.example.com/job/2;Senior Data Engineer;TechSolutions;Develop backend data services.;14000-18000;Java,Scala,Airflow;Krakow;true;2025-05-14T10:30:00
+https://jobs.example.com/job/3;Data Engineer;MLPower;Build and deploy data ingestion models.;20000-25000;Python,TensorFlow,Pandas;Gdansk;true;2025-05-18T11:45:00
+https://jobs.example.com/job/4;Data Platform Engineer;CloudBase;Maintain data lake infrastructure.;18000-22000;AWS,Docker,Kubernetes;Poznan;false;2025-05-11T08:15:00
+https://jobs.example.com/job/5;Data Engineer;Insightify;Analyze data trends and pipelines.;12000-16000;SQL,Python,PowerBI;Warszawa;false;2025-05-12T09:20:00
+https://jobs.example.com/job/6;Data Platform Engineer;DeployHub;Automate data platform CI/CD pipelines.;16000-21000;Jenkins,Docker,AWS;Krakow;true;2025-05-15T14:10:00
+https://jobs.example.com/job/7;Senior Data Engineer;PixelCraft;Build real-time streaming pipelines.;13000-17000;Kafka,Scala,Spark;Wroclaw;true;2025-05-13T16:00:00
+https://jobs.example.com/job/8;Data Engineer;DataScape;Model and clean business data.;19000-24000;Python,Scikit-learn,SQL;Gdansk;false;2025-05-17T12:30:00
+https://jobs.example.com/job/9;Data Platform Architect;ArchTec;Define data platform architecture patterns.;22000-27000;UML,Microservices,Databricks;Warszawa;false;2025-05-19T09:40:00
+https://jobs.example.com/job/10;Data Engineer;AppNova;ETL pipelines for mobile analytics.;14000-18000;Python,Kotlin,Airflow;Krakow;true;2025-05-16T13:50:00
+https://jobs.example.com/job/11;Data Platform Architect;SecurePath;Ensure platform security and compliance.;20000-25000;Security,Terraform,Cloud;Poznan;false;2025-05-20T10:00:00
+https://jobs.example.com/job/12;Data Engineer;TestersUnited;Validate data quality and schema.;11000-15000;Great Expectations,Python;Wroclaw;false;2025-05-18T08:30:00
+https://jobs.example.com/job/13;Data Platform Engineer;CodeFusion;Develop data platform components.;16000-21000;Scala,React,PostgreSQL;Gdansk;true;2025-05-21T15:15:00
+https://jobs.example.com/job/14;Senior Data Platform Architect;NeuroTech;Architect scalable AI data pipelines.;23000-28000;Deep Learning,PyTorch,Python;Warszawa;true;2025-05-22T11:25:00
+https://jobs.example.com/job/15;Data Engineer;DataFlow;Build and maintain ETL pipelines.;15000-19000;SQL,Apache NiFi,Python;Krakow;false;2025-05-20T10:30:00
+https://jobs.example.com/job/16;Data Platform Engineer;SmartInsights;Deliver scalable BI infrastructure.;13000-17000;PowerBI,DAX,SQL;Wroclaw;false;2025-05-19T09:45:00
+https://jobs.example.com/job/17;Senior Data Platform Engineer;InfraCore;Manage cloud-native data platforms.;18000-23000;Spark,Scala,Delta Lake;Poznan;true;2025-05-23T14:00:00
+https://jobs.example.com/job/18;Data Engineer;BuildIt;Define data processing pipelines.;17000-22000;Airflow,Python,Spark;Gdansk;true;2025-05-21T17:00:00
+https://jobs.example.com/job/19;Data Platform Engineer;SysNet;Maintain hybrid data infrastructure.;12000-16000;Linux,Bash,Networking;Warszawa;false;2025-05-15T07:30:00
+https://jobs.example.com/job/20;Data Platform Architect;SkyStack;Design cloud-native data systems.;21000-26000;Azure,AWS,GCP;Krakow;true;2025-05-24T10:00:00
+https://jobs.example.com/job/21;Data Engineer;DataKeep;Ensure data governance and lineage.;14000-18000;Data Quality,GDPR,SQL;Wroclaw;false;2025-05-22T12:00:00
+https://jobs.example.com/job/22;Senior Data Platform Engineer;UptimeX;Improve data platform reliability.;20000-24000;SRE,Monitoring,Go;Poznan;true;2025-05-25T09:30:00
+https://jobs.example.com/job/23;Data Engineer;ModelFlow;Deploy ML data pipelines.;19000-23000;MLflow,Docker,Kubernetes;Gdansk;true;2025-05-25T15:45:00
+https://jobs.example.com/job/24;Senior Data Platform Architect;AgileNow;Lead platform architecture initiatives.;23000-28000;Architecture,DataOps,Kubernetes;Warszawa;false;2025-05-26T11:10:00
