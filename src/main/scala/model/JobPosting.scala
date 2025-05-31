@@ -12,4 +12,9 @@ case class JobPosting(
     location: String,
     isRemote: Boolean,
     datePublished: LocalDateTime
-)
+) {
+  def getSalariesMinMax: (Double, Double) = {
+    salaryRange.split('-').map(_.toDouble) match
+      case Array(x, y) => (x, y)
+  }
+}
